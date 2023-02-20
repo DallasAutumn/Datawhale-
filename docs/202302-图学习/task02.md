@@ -1,4 +1,6 @@
-# 1.图的基本表示
+# Task02 图的基本表示和特征工程
+
+## 1.图的基本表示
 $Graph=(Vertexes, Edges)$
 按连接结构：
 - 有向图：in = out
@@ -13,10 +15,10 @@ $Graph=(Vertexes, Edges)$
 - 连接列表（edge list）：只记录存在连接的节点对
 - 邻接列表：记录和每个节点相邻的节点
 
-# 2.传统图机器学习的特征工程
+## 2.传统图机器学习的特征工程
 不讲属性特征，只讲连接特征（属性特征后面图神经网络讲，侧重于图结构信息）
 
-## 2.1 节点层面的特征工程
+### 2.1 节点层面的特征工程
 ![](images/节点特征.png)
 - Node Degree
 - Degree Centrality
@@ -31,7 +33,7 @@ $Graph=(Vertexes, Edges)$
 - Graphlets
 ![](images/graphlets.png)
 
-## 2.2 连接层面的特征工程
+### 2.2 连接层面的特征工程
 recap：link prediction是通过已知连接补全未知连接
 
 直接提取link本身的特征，而不是把两端节点特征拼接！
@@ -44,7 +46,7 @@ recap：link prediction是通过已知连接补全未知连接
 - Katz Index：节点u和节点v之间长度为K的路径个数
   ![](images/katz%20index.png)
 
-## 2.3 全图层面的特征工程
+### 2.3 全图层面的特征工程
 ![](images/bag-of-nodes.png)
 ![](images/bag-of-node-degrees.png)
 graphlet kernel 子图匹配算力消耗过大，不常用。Subgraph isomorphism test is NP-hard.
