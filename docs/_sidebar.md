@@ -5,3 +5,4 @@
     * [task04：图嵌入表示学习](202302-图学习/task04.md)
     * [task05：DeepWalk、Node2Vec论文精读](202302-图学习/task05.md)
     * [task06：PageRank](202302-图学习/task06.md)
+    * [task07：标签传播与节点分类](202302-图学习/task07.md)
